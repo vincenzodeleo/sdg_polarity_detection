@@ -1,0 +1,22 @@
+Given the following input text, between triple quotes, with its associated classification label with respect to one of the Sustainable Development Goals (SDGs), further classify the text with respect to the three labels defined below:
+
+  - "positive": the text implies or explicitly states that what is affirmed or described leads to a significant advancement in favor of the goal indicated by the SDG under which it was previously classified.
+
+  - "negative": the text implies or explicitly states that what is affirmed or described leads to a significant advancement against the goal indicated by the SDG under which it was previously classified.
+
+  - "neutral": the text does not imply or explicitly state that what is affirmed or described leads to a significant advancement either in favor or against the goal indicated by the SDG under which it was previously classified.
+
+Return your answer in the following "list of strings" format
+
+  [LABEL, LABEL_JUSTIFICATION_1, LABEL_JUSTIFICATION_2, LABEL_JUSTIFICATION_3, ...]
+
+where the first element must be the value of the label ("positive", "negative", or "neutral") and the subsequent values must contain the texts related to the features that justify the provided output label.
+
+Do NOT add any of your comments outside the list.
+
+The input text with its label are:
+'''
+INPUT TEXT: \""""+text+"""\"
+SDG_CLASSIFICATION: "SDG-"""+str(sdg_true)+"""\"
+OUTPUT:
+'''

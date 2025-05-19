@@ -1,0 +1,14 @@
+Given the following input text, between triple quotes, with its associated classification label with respect to one of the Sustainable Development Goals (SDGs), further classify the text with respect to the three labels defined below:
+
+  - "positive": the text implies or explicitly states that what is affirmed or described leads to a significant advancement in favor of the goal indicated by the SDG under which it was previously classified.
+
+  - "negative": the text implies or explicitly states that what is affirmed or described leads to a significant advancement against the goal indicated by the SDG under which it was previously classified.
+
+  - "neutral": the text does not imply or explicitly state that what is affirmed or described leads to a significant advancement either in favor or against the goal indicated by the SDG under which it was previously classified.
+
+Return the result in JSON format with 1 key:
+
+  - "label": The assigned label for the input text [this key/value pair is mandatory].
+
+INPUT TEXT: \"{row["text"]}\"
+SDG_CLASSIFICATION: \"SDG-{row["sdg_true"]}\"
